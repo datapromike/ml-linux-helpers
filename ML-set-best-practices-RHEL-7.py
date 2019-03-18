@@ -356,7 +356,7 @@ rec_swap_space_kb = int(max_memory_kb) - int(hugepage_size_kb)
 
 #Check for over 32Gb recommendation
 if rec_swap_space_kb > (int(32)*1024*1024):
-	rec_swap_sapce_mb = (int(32)*1024)
+	rec_swap_space_mb = (int(32)*1024)
 else:
 	rec_swap_space_mb = (int(rec_swap_space_kb) / 1024)
 
